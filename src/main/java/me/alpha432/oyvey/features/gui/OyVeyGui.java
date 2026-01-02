@@ -64,7 +64,7 @@ public class OyVeyGui extends Screen {
     @Override
     public void render(GuiGraphics context, int mouseX, int mouseY, float delta) {
         Item.context = context;
-        context.fill(0, 0, context.guiWidth(), context.guiHeight(), new Color(0, 0, 0, 120).hashCode());
+        context.fill(0, 0, context.guiWidth(), context.guiHeight(), new Color(0, 0, 0, 0).hashCode());
         this.widgets.forEach(components -> components.drawScreen(context, mouseX, mouseY, delta));
     }
 
